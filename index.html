@@ -3,55 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cars.com Template</title>
+    <title>My Simple Webpage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #f4f4f9;
         }
         header {
-            background-color: #f5f5f5;
-            width: 100%;
-            padding: 20px;
+            background-color: #5a67d8;
+            color: white;
+            padding: 10px;
             text-align: center;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-
-<header>
+    <header>
+        <h1>Welcome to Cars.com</h1>
+    </header>
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a Cars.com external website for Interaction.</p>
+    </main>
+    <footer>
+        <p>© 2023 Contact Us</p>
+    </footer>
+    <script type='text/javascript'>
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
     
-	<img src="https://www.cars.com/images/cars_logo_primary@2x-369317d81682f33d21c8fbdc7959f837.png?vsn=d" alt="Cars.com Logo" width="150" align="left">
-    <img src="https://uicookies.com/wp-content/uploads/2019/08/automotive-website-template-wordpress-theme-1000x750.jpg.avif" alt="Car Image" height="300" width="700">
-</header>
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-			embeddedservice_bootstrap.init(
-				'00DgL000009yHoo',
-				'Github_Messaging_Setting',
-				'https://orgfarm-70aa6fa9e7-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1757416946470',
-				{
-					scrt2URL: 'https://orgfarm-70aa6fa9e7-dev-ed.develop.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://orgfarm-70aa6fa9e7-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1757416946470/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-
+                embeddedservice_bootstrap.init(
+                    '00DgL000009yHoo',
+                    'Github_Messaging_Setting',
+                    'https://orgfarm-70aa6fa9e7-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1757416946470',
+                    {
+                        scrt2URL: 'https://orgfarm-70aa6fa9e7-dev-ed.develop.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://orgfarm-70aa6fa9e7-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1757416946470/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+    
 </body>
 </html>
